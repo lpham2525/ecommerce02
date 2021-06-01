@@ -16,11 +16,11 @@
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--font awesome icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <!--Custom CSS file-->
-      <link rel="stylesheet" href="style.css"/>
+  <!--Custom CSS file-->
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <!--start header-->
@@ -33,52 +33,70 @@
       </div>
     </div>
     <!--primary navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <ul class="navbar-nav m-auto font-rubik">
-        <li class="nav-item">
-          <a class="nav-link active"      aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav m-auto font-rubik">
+          <li class="nav-item">
+            <a class="nav-link active"      aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+      <form action="#" class="font-size-14 font-rale">
+        <a href="#" class="py-2 rounded-pill color-primary-bg">
+          <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+          <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+        </a>
+      </form>
     </div>
-    <form action="#" class="font-size-14 font-rale">
-      <a href="#" class="py-2 rounded-pill color-primary-bg">
-        <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
-        <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
-      </a>
-    </form>
-  </div>
-</nav>
+  </nav>
   </header>
   <!--start main site-->
   <main id="main-site">
     <!--Owl carousel-->
     <section id="banner-area">
-      
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="./assets/images/artistaday.png" alt="artist a day">
+        </div>
+        <div class="item">
+          <img src="./assets/images/nightSky.jpg" alt="night sky">
+        </div>
+        <div class="item">
+          <img src="./assets/images/spongebob.jpg" alt="spongebob riding a lisa frank unicorn">
+        </div>
+      </div>
     </section>
+    <!--end owl carousel-->
   </main>
   <footer>
 
   </footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
   integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
     integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  <!--owl carousel js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--custom javascript-->
+  <script src="index.js"></script>
 </body>
 </html>
