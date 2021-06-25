@@ -4,7 +4,7 @@ $(document).ready(function () {
     dots: true,
     items: 1
   })
-})
+
 
 //top-sale owl carousel
 $("#top-sale.owl-carousel").owlCarousel({
@@ -23,3 +23,18 @@ $("#top-sale.owl-carousel").owlCarousel({
     }
   }
 })
+
+//isotope filter
+let $grid = $(".grid").isotope({
+  itemSelector: 'grid-item',
+  layoutMode: 'fitRows'
+})
+
+//filter items on button click 
+$(".button-group").on("click","button", function() {
+  let filterVale=$(this).attr("data-filter")
+  $grid.isotope({filter: filterValue})
+})
+
+})
+
