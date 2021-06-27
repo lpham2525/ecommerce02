@@ -57,10 +57,11 @@ $(".button-group").on("click","button", function() {
   // product quantity section
   let $qty_up=$(".qty.qty-up")
   let $qty_down = $(".qty.qty-down")
-  let $input = $("qty.qty_input")
+  // let $input = $("qty.")
 
   //click on qty up button
   $qty_up.click(function(event) {
+    let $input = $(`.qty_input[data-id='${$(this).data("id")}]`)
     if($input.val()>=1 && $input.val()<=9) {
       $input.val(function(i, oldValue){
         return ++oldValue
@@ -70,6 +71,7 @@ $(".button-group").on("click","button", function() {
 
   //click on qty down button
   $qty_down.click(function (event) {
+    let $input = $(`.qty_input[data-id='${$(this).data("id")}]`)
     if ($input.val() > 1 && $input.val() <= 10) {
       $input.val(function (i, oldValue) {
         return --oldValue
